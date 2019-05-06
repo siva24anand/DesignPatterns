@@ -10,6 +10,7 @@ namespace DesignPatternConsole
     {
         static void Main(string[] args)
         {
+            Singleton.Singleton.Execute();
         }
     }
 }
