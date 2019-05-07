@@ -8,6 +8,9 @@ namespace DesignPatternConsole.Singleton
 {
     public class LoadBalancer
     {
+        // Static members are 'eagerly initialized', that is, 
+        // immediately when class is loaded for the first time.
+        // .NET guarantees thread safety for static initialization
         private static readonly LoadBalancer _loadBalancer = new LoadBalancer();
 
         private List<Server> _servers;
@@ -43,4 +46,52 @@ namespace DesignPatternConsole.Singleton
         public string GetDateTime { get; }
 
     }
+
+    public class LoadBalancerLock
+    {
+        private static LoadBalancerLock _loadBalancerLock;
+        private List<string> _servers = new List<string>();
+        private Random _random = new Random();
+
+        private static object syncLock = new object();
+
+        public string GetDateTime { get; }
+
+        protected LoadBalancerLock()
+        {
+            _servers.Add("ServerI");
+            _servers.Add("ServerII");
+            _servers.Add("ServerIII");
+            _servers.Add("ServerIV");
+            _servers.Add("ServerV");
+            GetDateTime = DateTime.Now.Ticks.ToString();
+        }
+
+        public static LoadBalancerLock GetLoadBalancerLock()
+        {
+            if(_loadBalancerLock == null)
+            {
+                lock(syncLock)
+                {
+                    if(_loadBalancerLock == null)
+                    {
+                        _loadBalancerLock = new LoadBalancerLock();
+                    }
+                }
+            }
+            return _loadBalancerLock;
+        }
+
+        public string Server
+        {
+            get
+
+            {
+                int r = _random.Next(_servers.Count);
+                return _servers[r].ToString();
+            }
+        }
+
+    }
+
 }
