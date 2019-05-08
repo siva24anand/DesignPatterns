@@ -26,7 +26,7 @@ namespace DesignPatternConsole.Singleton
                 {
                     var serverName = b.NextServer.Name;
                     Console.Write("Dispatch request to: " + serverName);
-                    Console.WriteLine(" | DateTime ticks: " + b.GetDateTime);
+                    Console.WriteLine(" | DateTime ticks: " + b._dateTime);
                 }
             }
             else
@@ -44,7 +44,7 @@ namespace DesignPatternConsole.Singleton
                 {
                     string server = b.Server;
                     Console.Write("Dispatch Request to: " + server);
-                    Console.WriteLine(" | DateTime ticks: " + b.GetDateTime);
+                    Console.WriteLine(" | DateTime ticks: " + b._dateTime);
                 }
             }
 

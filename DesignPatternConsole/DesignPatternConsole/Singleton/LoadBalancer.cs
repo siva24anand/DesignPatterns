@@ -15,6 +15,7 @@ namespace DesignPatternConsole.Singleton
 
         private List<Server> _servers;
         private Random _random = new Random();
+        public string _dateTime;
 
         private LoadBalancer()
         {
@@ -26,7 +27,7 @@ namespace DesignPatternConsole.Singleton
                  new Server{ Name = "ServerIV", IP = "120.14.220.21" },
                  new Server{ Name = "ServerV", IP = "120.14.220.22" },
             };
-            GetDateTime = DateTime.Now.Ticks.ToString();
+            _dateTime = DateTime.Now.Ticks.ToString();
         }
 
         public static LoadBalancer GetLoadBalancer()
@@ -43,7 +44,7 @@ namespace DesignPatternConsole.Singleton
             }
         }
 
-        public string GetDateTime { get; }
+        //public string GetDateTime { get { return _dateTime; } }
 
     }
 
@@ -55,7 +56,9 @@ namespace DesignPatternConsole.Singleton
 
         private static object syncLock = new object();
 
-        public string GetDateTime { get; }
+        //public string GetDateTime { get { return _dateTime; } }
+
+        public string _dateTime;
 
         protected LoadBalancerLock()
         {
@@ -64,7 +67,7 @@ namespace DesignPatternConsole.Singleton
             _servers.Add("ServerIII");
             _servers.Add("ServerIV");
             _servers.Add("ServerV");
-            GetDateTime = DateTime.Now.Ticks.ToString();
+            _dateTime = DateTime.Now.Ticks.ToString();
         }
 
         public static LoadBalancerLock GetLoadBalancerLock()
