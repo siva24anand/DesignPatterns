@@ -11,7 +11,9 @@ namespace DesignPatternConsole
         static void Main(string[] args)
         {
             //Singleton.Singleton.Execute();
-            Factory.Factory.Execute();
+            //Factory.Factory.Execute();
+            //Strategy.Strategy.Execute();
+            Observer.Observer.Execute();
         }
     }
 }

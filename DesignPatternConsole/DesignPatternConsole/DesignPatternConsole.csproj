@@ -59,6 +59,11 @@
     <Compile Include="Singleton\LoadBalancer.cs" />
     <Compile Include="Singleton\Server.cs" />
     <Compile Include="Singleton\Singleton.cs" />
+    <Compile Include="Strategy\CalculateClient.cs" />
+    <Compile Include="Strategy\ICalculate.cs" />
+    <Compile Include="Strategy\Minus.cs" />
+    <Compile Include="Strategy\Plus.cs" />
+    <Compile Include="Strategy\Strategy.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
