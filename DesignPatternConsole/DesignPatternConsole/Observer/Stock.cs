@@ -8,13 +8,14 @@ namespace DesignPatternConsole.Observer
 {
     public abstract class Stock
     {
-        private string _symbol;
+        private readonly string _stockName;
         private double _price;
+
         private List<IInvestor> _investors = new List<IInvestor>();
 
-        public Stock(string symbol, double price)
+        public Stock(string stockName, double price)
         {
-            _symbol = symbol;
+            _stockName = stockName;
             _price = price;
         }
 
@@ -24,21 +25,36 @@ namespace DesignPatternConsole.Observer
         }
         public void Detach(IInvestor investor)
         {
-            _investors.Remove(investor);
+            _investors.RemoveAll(i => i.Name == investor.Name);
         }
         public void Notify()
         {
             foreach (IInvestor investor in _investors)
             {
-                
+                investor.Update(StockName, Price);
             }
         }
-        public string Symbol
+
+        public double Price
+        {
+            get { return _price; }
+            set
+            {
+                if(_price != value)
+                {
+                    _price = value;
+                    Notify();
+                }
+            }
+        }
+
+        public string StockName
         {
             get
             {
-                return _symbol;
+                return _stockName;
             }
         }
+
     }
 }

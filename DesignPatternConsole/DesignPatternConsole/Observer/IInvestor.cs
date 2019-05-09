@@ -8,6 +8,7 @@ namespace DesignPatternConsole.Observer
 {
     public interface IInvestor
     {
-        void Update(Stock stock);
+        void Update(string stockName, double price);
+        string Name { get; }
     }
 }

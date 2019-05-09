@@ -8,9 +8,18 @@ namespace DesignPatternConsole.Observer
 {
     public class Investor: IInvestor
     {
-        public void Update(Stock stock)
+        private readonly string _name;
+
+        public Investor(string name)
         {
-            throw new NotImplementedException();
+            _name = name;
+        }
+
+        public string Name { get { return _name; } }
+
+        public void Update(string stockName, double price)
+        {
+            Console.WriteLine($"Notfied for investor: {_name} | Stock: {stockName} Price: changed to {price}");
         }
     }
 }

@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace DesignPatternConsole.Observer
 {
-    public class Company: Stock
+    public class Company : Stock
     {
-
+        public Company(string symbol, double price) : base(symbol, price)
+        {
+        }
     }
 }
