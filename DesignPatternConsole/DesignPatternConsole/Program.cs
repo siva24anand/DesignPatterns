@@ -13,7 +13,8 @@ namespace DesignPatternConsole
             //Singleton.Singleton.Execute();
             //Factory.Factory.Execute();
             //Strategy.Strategy.Execute();
-            Observer.Observer.Execute();
+            //Observer.Observer.Execute();
+            Facade.Facade.Execute();
         }
     }
 }

@@ -43,6 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Facade\Facade.cs" />
+    <Compile Include="Facade\InventoryManager.cs" />
+    <Compile Include="Facade\OnlineShoppingFacade.cs" />
     <Compile Include="Factory\Bike.cs" />
     <Compile Include="Factory\Car.cs" />
     <Compile Include="Factory\SimpleFactory\ConcreateVehicleFactory.cs" />
