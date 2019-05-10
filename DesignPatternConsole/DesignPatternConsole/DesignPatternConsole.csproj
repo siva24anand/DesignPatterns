@@ -43,9 +43,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractFactory\AbstractFactory.cs" />
+    <Compile Include="AbstractFactory\CarDispatch.cs" />
+    <Compile Include="AbstractFactory\Factory\BreezaCarFactory.cs" />
+    <Compile Include="AbstractFactory\CarEngine\DDISEngine.cs" />
+    <Compile Include="AbstractFactory\CarEngine\IEngine.cs" />
+    <Compile Include="AbstractFactory\CarEngine\VVTEngine.cs" />
+    <Compile Include="AbstractFactory\CarLight\ILight.cs" />
+    <Compile Include="AbstractFactory\CarLight\LED.cs" />
+    <Compile Include="AbstractFactory\CarLight\Projector.cs" />
+    <Compile Include="AbstractFactory\CarTyre\Apollo.cs" />
+    <Compile Include="AbstractFactory\CarTyre\ITyre.cs" />
+    <Compile Include="AbstractFactory\CarTyre\Michelin.cs" />
+    <Compile Include="AbstractFactory\Factory\CiazCarFactory.cs" />
+    <Compile Include="AbstractFactory\Factory\ICarFactory.cs" />
+    <Compile Include="AbstractFactory\Factory\SwiftCarFactory.cs" />
     <Compile Include="Facade\Facade.cs" />
     <Compile Include="Facade\InventoryManager.cs" />
     <Compile Include="Facade\OnlineShoppingFacade.cs" />
+    <Compile Include="FactoryMethod\Amaze.cs" />
+    <Compile Include="FactoryMethod\City.cs" />
+    <Compile Include="FactoryMethod\Civic.cs" />
+    <Compile Include="FactoryMethod\FactoryMethod.cs" />
+    <Compile Include="FactoryMethod\HondaFactory.cs" />
+    <Compile Include="FactoryMethod\IHonda.cs" />
+    <Compile Include="FactoryMethod\IHondaFactory.cs" />
     <Compile Include="Factory\Bike.cs" />
     <Compile Include="Factory\Car.cs" />
     <Compile Include="Factory\SimpleFactory\ConcreateVehicleFactory.cs" />

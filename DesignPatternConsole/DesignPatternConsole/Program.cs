@@ -14,7 +14,9 @@ namespace DesignPatternConsole
             //Factory.Factory.Execute();
             //Strategy.Strategy.Execute();
             //Observer.Observer.Execute();
-            Facade.Facade.Execute();
+            //Facade.Facade.Execute();
+            //FactoryMethod.FactoryMethod.Execute();
+            AbstractFactory.AbstractFactory.Execute();
         }
     }
 }
