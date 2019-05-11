@@ -19,7 +19,8 @@ namespace DesignPatternConsole.Observer
 
         public void Update(string stockName, double price)
         {
-            Console.WriteLine($"Notfied for investor: {_name} | Stock: {stockName} Price: changed to {price}");
+            Console.WriteLine("Notfied for investor: {0} | Stock: {1} Price: changed to {2}",_name,stockName,price);
+            //Console.WriteLine($"Notfied for investor: {_name} | Stock: {stockName} Price: changed to {price}");
         }
     }
 }

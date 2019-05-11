@@ -18,8 +18,10 @@ namespace DesignPatternConsole.AbstractFactory
             else if(carName.ToLower() == "ciaz")
                 _carFactory = new CiazCarFactory();
 
-            Console.WriteLine($"{carName} Details:  Engine: {_carFactory.GetEngine().EngineInfo()}, Light: {_carFactory.GetLight().LightInfo()}," +
-                $" Tyre: {_carFactory.GetTyre().TyreInfo()}");
+            //Console.WriteLine($"{carName} Details:  Engine: {_carFactory.GetEngine().EngineInfo()}, Light: {_carFactory.GetLight().LightInfo()}," +
+            //    $" Tyre: {_carFactory.GetTyre().TyreInfo()}");
+
+            Console.WriteLine("{0} Details:  Engine: {1}, Light: {2}, Tyre: {3}", carName, _carFactory.GetEngine().EngineInfo(), _carFactory.GetLight().LightInfo(), _carFactory.GetTyre().TyreInfo());
         }
     }
 }

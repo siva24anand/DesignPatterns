@@ -68,17 +68,6 @@
     <Compile Include="FactoryMethod\HondaFactory.cs" />
     <Compile Include="FactoryMethod\IHonda.cs" />
     <Compile Include="FactoryMethod\IHondaFactory.cs" />
-    <Compile Include="Factory\Bike.cs" />
-    <Compile Include="Factory\Car.cs" />
-    <Compile Include="Factory\SimpleFactory\ConcreateVehicleFactory.cs" />
-    <Compile Include="Factory\Factory.cs" />
-    <Compile Include="Factory\FactoryMethod\BaseVehicleFactory.cs" />
-    <Compile Include="Factory\FactoryMethod\BikeFactory.cs" />
-    <Compile Include="Factory\FactoryMethod\CarFactory.cs" />
-    <Compile Include="Factory\FactoryMethod\ExpencesManagerFactory.cs" />
-    <Compile Include="Factory\IVehicle.cs" />
-    <Compile Include="Factory\VehicleExpences.cs" />
-    <Compile Include="Factory\SimpleFactory\VehicleFactory.cs" />
     <Compile Include="Observer\Company.cs" />
     <Compile Include="Observer\IInvestor.cs" />
     <Compile Include="Observer\Investor.cs" />
