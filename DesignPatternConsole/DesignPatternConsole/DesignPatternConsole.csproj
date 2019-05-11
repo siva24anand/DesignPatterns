@@ -58,6 +58,13 @@
     <Compile Include="AbstractFactory\Factory\CiazCarFactory.cs" />
     <Compile Include="AbstractFactory\Factory\ICarFactory.cs" />
     <Compile Include="AbstractFactory\Factory\SwiftCarFactory.cs" />
+    <Compile Include="Builder\Builders\BalenoBuilder.cs" />
+    <Compile Include="Builder\Builder.cs" />
+    <Compile Include="Builder\Builders\CiazBuilder.cs" />
+    <Compile Include="Builder\Builders\ICarBuilder.cs" />
+    <Compile Include="Builder\Builders\SwiftBuilder.cs" />
+    <Compile Include="Builder\Director\CarCreator.cs" />
+    <Compile Include="Builder\Product\Car.cs" />
     <Compile Include="Facade\Facade.cs" />
     <Compile Include="Facade\InventoryManager.cs" />
     <Compile Include="Facade\OnlineShoppingFacade.cs" />

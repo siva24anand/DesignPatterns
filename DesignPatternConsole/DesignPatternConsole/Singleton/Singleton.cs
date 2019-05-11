@@ -48,7 +48,6 @@ namespace DesignPatternConsole.Singleton
                 }
             }
 
-            Console.ReadKey();
         }
     }
 }

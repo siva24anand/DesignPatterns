@@ -14,7 +14,6 @@ namespace DesignPatternConsole.AbstractFactory
             carDispatch.CreateCar("Swift");
             carDispatch.CreateCar("breeza");
             carDispatch.CreateCar("ciaz");
-            Console.ReadLine();
         }
 
     }

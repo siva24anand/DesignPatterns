@@ -20,7 +20,6 @@ namespace DesignPatternConsole.FactoryMethod
             IHonda hondaCivic = hondaFactory.GetVehicleDetails("Civic");
             //Console.WriteLine($"Car Details: Name: {hondaCivic.Name}, Model: {hondaCivic.GetCarModel}, Color: {hondaCivic.Color}");
             Console.WriteLine("Car Details: Name: {0}, Model: {1}, Color: {2}", hondaCivic.Name, hondaCivic.GetCarModel, hondaCivic.Color);
-            Console.ReadLine();
         }
     }
 }
