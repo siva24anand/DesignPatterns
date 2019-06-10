@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesignPatternConsole.Strategy
 {
+    //strategy
     public interface ICalculate
     {
         int Calculate(int value1, int value2);

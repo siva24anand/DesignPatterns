@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesignPatternConsole.Strategy
 {
+    //context
     public class CalculateClient
     {
         private ICalculate _calculate;

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesignPatternConsole.FactoryMethod
 {
+    //product
     public interface IHonda
     {
         string Name { get; }
