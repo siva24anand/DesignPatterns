@@ -16,7 +16,6 @@ namespace DesignPatternConsole.Strategy
             var minusClient = new CalculateClient(new Minus());
             Console.WriteLine("Minus|(7-3): " + minusClient.Execute(7, 3));
 
-            Console.ReadKey();
         }
     }
 }

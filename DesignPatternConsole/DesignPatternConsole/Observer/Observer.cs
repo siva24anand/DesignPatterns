@@ -25,7 +25,6 @@ namespace DesignPatternConsole.Observer
             ibm.Attach(new Investor("Investor4"));
             ibm.Price = 743.33;
 
-            Console.ReadLine();
         }
     }
 }

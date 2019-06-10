@@ -18,7 +18,6 @@ namespace DesignPatternConsole.Facade
             Console.WriteLine("Placing an order in festive days..");
             Console.WriteLine("==================================");
             onlineFacade.PlaceOrderinSuperSale();
-            Console.ReadLine();
         }
     }
 }
